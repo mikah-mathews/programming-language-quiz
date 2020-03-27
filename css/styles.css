@@ -1,5 +1,6 @@
 #quiz {
   display: none;
+  background-color: white;
 } 
 
 #javascript {
@@ -11,4 +12,29 @@
 
 #ruby {
   display: none;
+}
+
+#restartButton {
+  display: none;
+}
+
+.jumbotron {
+  background-color: skyblue;
+}
+
+.btn {
+  background-color: slateblue;
+}
+
+.btn #btnConfirm {
+  padding: 20px;
+  margin: 50px;
+  border-color: black;
+  border-width: 10px;
+}
+
+body {
+  background-color: rgb(194, 232, 255);
+  text-align: center;
+
 }

@@ -3,9 +3,14 @@ $(document).ready(function () {
   $("#javascript").hide();
   $("#python").hide();
   $("#ruby").hide();
+  $("#restartButton").hide();
   $("#startButton").click(function() {
     // Shows the quiz
     $('#quiz').show();
+
+    $('#restartButton').click(function() {
+      location.reload();
+  });
 
     // when the submit quiz button is pressed - do this
     $("#btnConfirm").click(function () {
@@ -72,12 +77,15 @@ $(document).ready(function () {
 
       if(amountOfA > amountOfB && amountOfA > amountOfC) {
         $("#javascript").show();
+        $("#restartButton").show();
         console.log("JAVASCRIPT");
       } else if(amountOfB > amountOfA && amountOfB > amountOfC) {
         $("#python").show();
+        $("#restartButton").show();
         console.log("PYTHON");
       } else if(amountOfC > amountOfA && amountOfC > amountOfB) {
         $("#ruby").show();
+        $("#restartButton").show();
         console.log("RUBY");
       }
       event.preventDefault();
