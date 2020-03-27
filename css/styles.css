@@ -1,6 +1,14 @@
- /* #quiz {
+#quiz {
   display: none;
 } 
-.explaination {
+
+#javascript {
   display: none;
-}  */
+}
+#python {
+  display: none;
+}  
+
+#ruby {
+  display: none;
+}
