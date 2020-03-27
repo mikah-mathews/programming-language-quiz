@@ -1,9 +1,10 @@
 $(document).ready(function () {
+  event.preventDefault();
   $("#quiz").hide();
   $(".explaination").hide();
   $("#startButton").click(function (event) {
     // Shows the quiz
-    $("quiz").show();
+    $("#quiz").toggle();
 
     // when the submit quiz button is pressed - do this
     $("#btnConfirm").click(function (event) {
@@ -15,7 +16,9 @@ $(document).ready(function () {
       // checks to see value of question one
       $("input:radio[name=quesionOne]:checked").val() {
         if(value="a") {
-          var amountOfA = amountOfA + 1;
+          var amountOfA = function addA() {
+            amountOfA + 1;
+          } 
         } else if(value="b") {
           var amountOfB = amountOfB + 1;
         } else if(value="c") {
