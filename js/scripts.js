@@ -3,8 +3,9 @@ $(document).ready(function () {
   $("#quiz").hide();
   $(".explaination").hide();
   $("#startButton").click(function (event) {
+
     // Shows the quiz
-    $("#quiz").toggle();
+    $("#quiz").show();
 
     // when the submit quiz button is pressed - do this
     $("#btnConfirm").click(function (event) {
@@ -14,56 +15,54 @@ $(document).ready(function () {
       var amountOfC = 0;
 
       // checks to see value of question one
-      $("input:radio[name=quesionOne]:checked").val() {
+      $("input:radio[name=questionOne]:checked").val() {
         if(value="a") {
-          var amountOfA = function addA() {
-            amountOfA + 1;
-          } 
+          amountOfA += 1;
         } else if(value="b") {
-          var amountOfB = amountOfB + 1;
+          amountOfB += 1;
         } else if(value="c") {
-          var amountOfC = amountOfC + 1;
+          amountOfC += 1;
         }
-      };
+      }
 
       // checks to see value of question two
-      $("input:radio[name=quesionTwo]:checked").val() {
+      $("input:radio[name=questionTwo]:checked").val() {
         if(value="a") {
-          var amountOfA = amountOfA + 1;
+          amountOfA += 1;
         } else if(value="b") {
-          var amountOfB = amountOfB + 1;
+          amountOfB += 1;
         } else if(value="c") {
-          var amountOfC = amountOfC + 1;
+          amountOfC += 1;
         }
 
       // checks to see value of question Three
-      $("input:radio[name=quesionThree]:checked").val() {
+      $("input:radio[name=questionThree]:checked").val() {
         if(value="a") {
-          var amountOfA = amountOfA + 1;
+          amountOfA += 1;
         } else if(value="b") {
-          var amountOfB = amountOfB + 1;
+          amountOfB += 1;
         } else if(value="c") {
-          var amountOfC = amountOfC + 1;
+          amountOfC += 1;
         }
 
         // checks to see value of question Four
-      $("input:radio[name=quesionFour]:checked").val() {
+      $("input:radio[name=questionFour]:checked").val() {
         if(value="a") {
-          var amountOfA = amountOfA + 1;
+          amountOfA += 1;
         } else if(value="b") {
-          var amountOfB = amountOfB + 1;
+          amountOfB += 1;
         } else if(value="c") {
-          var amountOfC = amountOfC + 1;
+          amountOfC += 1;
         }
 
         // checks to see value of question Five
-      $("input:radio[name=quesionFive]:checked").val() {
+      $("input:radio[name=questionFive]:checked").val() {
         if(value="a") {
-          var amountOfA = amountOfA + 1;
+          amountOfA += 1;
         } else if(value="b") {
-          var amountOfB = amountOfB + 1;
+          amountOfB += 1;
         } else if(value="c") {
-          var amountOfC = amountOfC + 1;
+          amountOfC += 1;
         }
 
       if(amountOfA > amountOfB && amountOfA > amountOfC) {
